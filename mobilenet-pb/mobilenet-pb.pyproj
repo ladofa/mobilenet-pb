@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c5d3322d-5f0d-444e-a175-0e908aaefa6d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>mobilenet_pb.py</StartupFile>
+    <StartupFile>build_tfrecord_face.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,28 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="build_tfrecord_face.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="conv_blocks.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mobilenet.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mobilenet_original.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mobilenet_pb.py" />
+    <Compile Include="mobilenet_v2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mobilenet_v2_test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test_mnist.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
